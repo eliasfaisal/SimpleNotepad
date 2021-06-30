@@ -1,0 +1,100 @@
+<html charset="utf-8">
+    <head>
+        <link rel="stylesheet" href="css/index.css"/>
+        <link rel="icon" href="assets/icon.svg">
+        <title>Simple Notepad</title>
+    </head>
+    <body>
+        <div id="app">
+            <div hidden id="dialogsHolder">
+                <div hidden id="saveCopyBox">
+                    <div class="title">Save Copy</div>
+                    <div class="content">
+                        <div class="inputs">
+                            <input id="fname">
+                            <input id="exten">
+                        </div>
+                        <div class="BoxBtns">
+                            <div id="save" class="boxBtn">Save</div>
+                            <div id="cancel" class="boxBtn">Cancel</div>
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
+                <div hidden id="replaceAllBox">
+                    <div class="title">Replace All</div>
+                    <div class="content">
+                        <div style="
+    display: flex;
+    margin-top: 5px;
+">
+                            <div style="opacity:0;" id="msg">Nothing To Replace</div>
+                        </div>
+                        <div class="inputsHolder">
+                            <div class="replaceInputs">
+                                <input id="param1">
+                                <input id="param2">
+                            </div>
+                        </div>
+                        <div style="
+    display: flex;
+">
+                            <div id="checksHolder">
+                                <input type="checkbox" id="matchCase">
+                                <label for="matchCase">Match Case</label>
+                            </div>
+                        </div>
+                        <div class="BoxBtns">
+                            <div id="replace" class="boxBtn">Replace</div>
+                            <div id="cancel" class="boxBtn">Cancel</div>
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
+            </div>
+            <div id="topBar">
+                <div id="menusHolder">
+                    <div hidden id="fileMenu" class="menu">
+                        <div id="fileMenuNew" class="menuItem">New</div>
+                        <div id="fileMenuOpen" class="menuItem">Open</div>
+                        <div id="fileMenuView" class="menuItem">View</div>
+                        <div id="saveCopy" class="menuItem">Save Copy</div>
+                        <div class="menuSep"></div>
+                        <div id="exit" class="menuItem">Exit</div>
+                    </div>
+                    <div hidden id="editMenu" class="menu">
+                        <div id="textReplaceAll" class="menuItem">Replace All</div>
+                        <div class="menuSep"></div>
+                        <div id="insertTD" class="menuItem">Insert Time &amp;Date</div>
+                    </div>
+                    <div hidden id="infoMenu" class="menu">
+                        <div id="githubRepo" class="menuItem">View Github Repo</div>
+                        <div id="about" class="menuItem">About</div>
+                        <div class="menuSep"></div>
+                        <div id="portFolio" class="menuItem">View @EliasFaisal Github | Portfolio</div>
+                    </div>
+                </div>
+                <div id="btns_holder">
+                    <div id="mFile" class="btn">File</div>
+                    <div id="mEdit" class="btn">Edit</div>
+                    <div id="mInfo" class="btn">Info</div>
+                </div>
+                <!--<div id="colorChange"></div>-->
+            </div>
+            <div id="textContentHolder">
+                <textarea id="textContent"></textarea>
+            </div>
+            <div id="bottomBar">
+                <div class="bottomBarText">Cursor :</div>
+                <div class="bottomBarText" id="cursor">0 (End)</div>
+                <div class="bottomBarText">Selected Length :</div>
+                <div class="bottomBarText" id="length">0</div>
+                <div class="bottomBarText" id="fileSize" style="
+    margin: auto 5px auto auto;
+">( 0KB )</div>
+            </div>
+        </div>
+        <script src="js/css.js"></script>
+        <script defer src="js/index.js"></script>
+    </body>
+</html>

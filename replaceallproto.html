@@ -1,0 +1,117 @@
+<html>
+    <head>
+        <style>
+            #replaceAllBox {
+                background-color: #3694d6;
+                width: 350px;
+                height: fit-content;
+                border-radius: 6px;
+            }
+
+            .title {
+                font-family: sans-serif;
+                color: #fff;
+                padding: 8px;
+                background: #0005;
+                border-radius: 6px 6px 0px 0px;
+            }
+
+            .content {
+                font-family: sans-serif;
+            }
+
+            .inputsHolder {
+                display: flex;
+                width: -webkit-fill-available;
+            }
+
+            .replaceInputs {
+                margin: auto;
+                width: -webkit-fill-available;
+                display: grid;
+            }
+
+            #pararm1,#pararm2 {
+                border-radius: 3px;
+                border: none;
+                font-size: initial;
+                height: 30px;
+                margin: 5px 15px 0 15px;
+            }
+
+            .boxBtn {
+                color: #fff;
+                background: #0005;
+                padding: 8px 25px;
+                border-radius: 4px;
+                margin: 0px 5px;
+            }
+
+            .boxBtn:hover {
+                background: #0004;
+            }
+
+            .boxBtn:active {
+                background: #0006;
+            }
+
+            .BoxBtns {
+                display: flex;
+                margin: 0 0 0 18px;
+                width: fit-content;
+                padding-bottom: 10px;
+            }
+
+            label[for="matchCase"] {
+                color: #fff;
+            }
+
+            #checksHolder {
+                margin: auto 5px;
+                width: fit-content;
+                height: fit-content;
+                padding: 5px;
+            }
+
+            #msg {
+                font-size: 12px;
+                color: #fff;
+                margin: auto;
+                padding: 5px;
+                border-radius: 3px;
+                background: #0003;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="replaceAllBox">
+            <div class="title">Replace All</div>
+            <div class="content">
+                <div style="
+    display: flex;
+    margin-top: 5px;
+">
+                    <div id="msg" >Nothing To Replace</div>
+                </div>
+                <div class="inputsHolder">
+                    <div class="replaceInputs">
+                        <input id="pararm1">
+                        <input id="pararm2">
+                    </div>
+                </div>
+                <div style="
+    display: flex;
+">
+                    <div id="checksHolder">
+                        <input type="checkbox" id="matchCase">
+                        <label for="matchCase">Match Case</label>
+                    </div>
+                </div>
+                <div class="BoxBtns">
+                    <div class="boxBtn">Replace</div>
+                    <div class="boxBtn">Cancel</div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

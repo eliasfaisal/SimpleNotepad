@@ -1,0 +1,239 @@
+* {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-user-select: none;
+}
+
+body {
+    margin: 0;
+    background-color: #3694d6;
+}
+
+#app {
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+}
+
+#topBar {
+    background-color: #0000002b;
+    width: -webkit-fill-available;
+    height: 30px;
+    display: flex;
+}
+
+#textContentHolder {
+    width: -webkit-fill-available;
+    height: unset;
+    background-color: #fff;
+}
+
+#bottomBar {
+    background-color: #0000002b;
+    width: -webkit-fill-available;
+    height: 20px;
+    display: flex;
+}
+
+#textContent {
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    resize: none;
+    outline: none;
+    border: none;
+    margin: 5px;
+    overflow-wrap: unset;
+    font-size: 20px;
+    font-family: sans-serif;
+    background: transparent;
+}
+
+#btns_holder {
+    margin-left: 5px;
+    display: flex;
+    width: fit-content;
+}
+
+.btn {
+    height: fit-content;
+    width: fit-content;
+    padding: 6px 5px;
+    font-family: sans-serif;
+    color: #ffffffd6;
+}
+
+.btn:hover {
+    background-color: #00000030;
+}
+
+.btn:active {
+    background-color: #0000004d;
+}
+
+#colorChange {
+    width: 20px;
+    height: 20px;
+    margin: 5px 5px 5px auto;
+    background: #0000002b;
+    border-radius: 60px;
+    box-shadow: 0 0 0 1px #000;
+}
+
+.bottomBarText {
+    font-size: 12px;
+    font-family: sans-serif;
+    margin: auto 5px;
+    color: #ffffffd6;
+}
+
+/* Menu Style */
+.menu {
+    position: fixed;
+    z-index: 1;
+    background: #3694d6;
+    width: fit-content;
+    height: fit-content;
+    font-family: sans-serif;
+    color: #ffffffd6;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.menuSep {
+    width: 80%;
+    height: 1px;
+    background: #fff;
+    margin: 4px auto;
+}
+
+.menuItem {
+    min-width: 150px;
+    padding: 2px;
+    border-radius: 4px;
+}
+
+.menuItem:hover {
+    background: #00000033;
+}
+
+.menuItem:active {
+    background: #00000073;
+}
+
+/* Dialogs Holder */
+#dialogsHolder {
+    position: fixed;
+    height: -webkit-fill-available;
+    width: -webkit-fill-available;
+    background-color: #0000004f;
+}
+
+/* Save Box */
+#saveCopyBox,#replaceAllBox {
+    background-color: #3694d6;
+    width: 350px;
+    height: fit-content;
+    border-radius: 6px;
+    position: fixed;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.title {
+    font-family: sans-serif;
+    color: #fff;
+    padding: 8px;
+    background: #0005;
+    border-radius: 6px 6px 0px 0px;
+}
+
+.content {
+    font-family: sans-serif;
+}
+
+.inputs {
+    display: flex;
+    margin: 18px auto;
+    width: fit-content;
+}
+
+#fname {
+    height: 30px;
+    width: 230px;
+}
+
+#exten {
+    width: 70px;
+    margin-left: 5px;
+}
+
+#fname,#exten {
+    border-radius: 3px;
+    border: none;
+    font-size: initial;
+}
+
+.boxBtn {
+    color: #fff;
+    background: #0005;
+    padding: 8px 25px;
+    border-radius: 4px;
+    margin: 0px 5px;
+}
+
+.boxBtn:hover {
+    background: #0004;
+}
+
+.boxBtn:active {
+    background: #0006;
+}
+
+.BoxBtns {
+    display: flex;
+    margin: 0 0 0 18px;
+    width: fit-content;
+    padding-bottom: 10px;
+}
+
+/* Replace Box */
+/* #replaceAllBox inherbited with #saveCopyBox */
+.inputsHolder {
+    display: flex;
+    width: -webkit-fill-available;
+}
+
+.replaceInputs {
+    margin: auto;
+    width: -webkit-fill-available;
+    display: grid;
+}
+
+#param1,#param2 {
+    border-radius: 3px;
+    border: none;
+    font-size: initial;
+    height: 30px;
+    margin: 5px 15px 0 15px;
+}
+
+label[for="matchCase"] {
+    color: #fff;
+}
+
+#checksHolder {
+    margin: auto 5px;
+    width: fit-content;
+    height: fit-content;
+    padding: 5px;
+}
+
+#msg {
+    font-size: 12px;
+    color: #fff;
+    margin: auto;
+    padding: 5px;
+    border-radius: 3px;
+    background: #0003;
+}
